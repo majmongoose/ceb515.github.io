@@ -1,1 +1,191 @@
-This is a test of site>
+<!DOCTYPE html>
+<html>
+<title>Charles Bricker</title>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
+<link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Inconsolata">
+<style>
+body, html {
+  height: 100%;
+  font-family: "Inconsolata", sans-serif;
+}
+
+.bgimg {
+  background-position: center;
+  background-size: cover;
+  background-image: url("images/internet.png");
+  min-height: 75%;
+}
+
+.menu {
+  display: none;
+}
+</style>
+<body>
+
+<!-- Links (sit on top) -->
+<div class="w3-top">
+  <div class="w3-row w3-padding w3-black">
+    <div class="w3-col s3">
+      <a href="#" class="w3-button w3-block w3-black">HOME</a>
+    </div>
+    <div class="w3-col s3">
+      <a href="#about" class="w3-button w3-block w3-black">ABOUT</a>
+    </div>
+    <div class="w3-col s3">
+      <a href="#exp" class="w3-button w3-block w3-black">EXPERIENCE</a>
+    </div>
+    <div class="w3-col s3">
+      <a href="#where" class="w3-button w3-block w3-black">CONTACT</a>
+    </div>
+  </div>
+</div>
+
+<!-- Header with image -->
+<header class="bgimg w3-display-container w3-grayscale-min" id="home">
+  <div class="w3-display-bottomleft w3-center w3-padding-large w3-hide-small">
+    <span class="w3-tag">charles@bricker.cc</span>
+  </div>
+  <div class="w3-display-middle w3-center">
+    <span class="w3-text-black" style="font-size:90px">Charles<br>Bricker</span>
+  </div>
+  <div class="w3-display-bottomright w3-center w3-padding-large">
+    <span class="w3-text-white"></span>
+  </div>
+</header>
+
+<!-- Add a background color and large text to the whole page -->
+<div class="w3-sand w3-grayscale w3-large">
+
+<!-- About Container -->
+<div class="w3-container" id="about">
+  <div class="w3-content" style="max-width:700px">
+    <h5 class="w3-center w3-padding-64"><span class="w3-tag w3-wide">ABOUT ME</span></h5>
+    <p>My name is Charles Bricker, and I graduated college in 2021 with two degrees in Information Technology.</p>
+    <p>I have held jobs in technical fields my whole life, which you can see in my experience section. I love all things technology from Ham Radio to Networking to Software Development.</p>
+<div class="w3-panel w3-leftbar w3-light-grey">
+      <p><i>“The Web as I envisaged it, we have not seen it yet. The future is still so much bigger than the past.”</i></p>
+      <p>Tim Berners-Lee | Inventor of the World Wide Web</p>
+    </div>
+  </div>
+</div>
+
+<!-- Experience Container -->
+<div class="w3-container" id="exp">
+  <div class="w3-content" style="max-width:700px">
+ 
+    <h5 class="w3-center w3-padding-48"><span class="w3-tag w3-wide">EXPERIENCE</span></h5>
+  
+    <div class="w3-row w3-center w3-card w3-padding">
+      <a href="javascript:void(0)" onclick="openMenu(event, 'Work');" id="myLink">
+        <div class="w3-col s6 tablink">Work</div>
+      </a>
+      <a href="javascript:void(0)" onclick="openMenu(event, 'Volunteer');">
+        <div class="w3-col s6 tablink">Volunteer</div>
+      </a>
+      <a href="javascript:void(0)" onclick="openMenu(event, 'Certifications');">
+        <div class="w3-col s6 tablink">Certifications/Licenses</div>
+      </a>
+      <a href="javascript:void(0)" onclick="openMenu(event, 'College');">
+        <div class="w3-col s6 tablink">College Courses</div>
+      </a>
+    </div>
+
+    <div id="Work" class="w3-container menu w3-padding-48 w3-card">
+      <h5>DCS Backup | Network Engineer | May 2021 - Present</h5>
+      <p class="w3-text-grey">Responsible for managing network services, desgining customer networks, as well as providing technical support to clients.</p><br>
+    
+      <h5>Pennsylvania College of Technology | Network Cabling Installation Assistant | Sept. 18 - May 2021</h5>
+      <p class="w3-text-grey">Install network cabling, troubleshoot and repair faults on a corporate network.</p><br>
+    
+      <h5>We Fix Phones N More | General Manager | May 2016 - May 2020</h5>
+      <p class="w3-text-grey">Manage a storefront during weekday shifts while repairing mobile computers and cellphones.</p><br>
+    
+      <h5>Lindley Electric Supply | Sales/Engraving | June 2015 - Aug. 2016</h5>
+      <p class="w3-text-grey">Answering sales calls and operating an engraving machine.</p><br>
+    </div>
+
+    <div id="Volunteer" class="w3-container menu w3-padding-48 w3-card">
+      
+      <h5>South Williamsport Fire Department | Firefighter/Fire Police | Feb. 2019 - May 2021</h5>
+      <p class="w3-text-grey">First responder during college assisting the community of South Williamsport as well as volunteering with traffic control during the Little League World Series.</p><br>
+    
+      <h5>Feasterville Fire Company | Firefighter/Webmaster | Feb. 2019 - Present</h5>
+      <p class="w3-text-grey">First responder, also redesigned and took over the role of managing the website and email accounts for the department.</p>
+      <a href="https://feastervillefire.org">https://feastervillefire.org</a></p><br>
+    
+      <h5>FIRST Lego League | Student Mentor | 2016-2017</h5>
+      <p class="w3-text-grey">Work with and teach young students about robotics in a competition environment.</p><br>
+    
+    </div> 
+    
+    <div id="Certifications" class="w3-container menu w3-padding-48 w3-card">
+        <h5>Information Technology</h5>
+        <p class="w3-text-grey">CompTIA A+ (Expired), Cisco CCNA Cybersecurity Operations</p><br>
+      
+        <h5>Amateur Radio</h5>
+        <p class="w3-text-grey">Using the callsign K3NOP, I am a FCC Licensed General Class License holder. I use this to connect and communicate with other radio operators around the world.</p><br>
+    
+        <h5>Firefighting</h5>
+        <p class="w3-text-grey">Intro to the Fire Service, Fireground Support, Exterior Firefighter, PA Basic Fire Police, Emergency Vehicle Operator Course (>10,000 GVWR), FEMA ICS100/200, FEMA IS-235/700/800, HazMat Awareness, HazMat Operations, Rescue Saw Saftey, Pump Operations 1</p><br>
+      
+        
+    </div>
+
+    <div id="College" class="w3-container menu w3-padding-48 w3-card">
+        <h5>Pennsylvania College of Technology</h5>
+        <p class="w3-text-grey">Programming 1/2; Information, Technology, and Society; Networking 1/2; Intro to Database; Technical and Professional Communication;
+            Fundamentals of Information Security; Intro to Unix/Linux; System Analysis; Principals of Management; Web Systems and Technologies;
+            Internetworking; Realtime Services; Virtualization, Cloud Computing, and Storage; Wireless and Mobile Computing; Network Simulation; 
+            Information Technology Project Management; Advanced Network Administration; Network Design and Management; Legal Issues in Information Security Management
+        </p><br>
+        
+    </div>
+
+  </div>
+</div>
+
+<!-- Contact/Area Container -->
+<div class="w3-container" id="where" style="padding-bottom:32px;">
+  <div class="w3-content" style="max-width:700px">
+    <h5 class="w3-center w3-padding-48"><span class="w3-tag w3-wide">CONTACT</span></h5>
+    <p>Send me an email to get in touch with me!</p>
+
+    <form action="/action_page.php" target="_blank">
+      <p><input class="w3-input w3-padding-16 w3-border" type="text" placeholder="Name" required name="Name"></p>
+      <p><input class="w3-input w3-padding-16 w3-border" type="email" placeholder="E-Mail Address" required name="E-Mail"></p>
+      <p><input class="w3-input w3-padding-16 w3-border" type="text" placeholder="Message" required name="Message"></p>
+      <p><button class="w3-button w3-black" type="submit">SEND MESSAGE</button></p>
+    </form>
+  </div>
+</div>
+
+<!-- End page content -->
+</div>
+
+<!-- Footer -->
+<footer class="w3-center w3-light-grey w3-padding-48 w3-large">
+  <p>&copy;2021 - Charles Bricker</p>
+</footer>
+
+<script>
+// Tabbed Menu
+function openMenu(evt, menuName) {
+  var i, x, tablinks;
+  x = document.getElementsByClassName("menu");
+  for (i = 0; i < x.length; i++) {
+    x[i].style.display = "none";
+  }
+  tablinks = document.getElementsByClassName("tablink");
+  for (i = 0; i < x.length; i++) {
+    tablinks[i].className = tablinks[i].className.replace(" w3-dark-grey", "");
+  }
+  document.getElementById(menuName).style.display = "block";
+  evt.currentTarget.firstElementChild.className += " w3-dark-grey";
+}
+document.getElementById("myLink").click();
+</script>
+
+</body>
+</html>
