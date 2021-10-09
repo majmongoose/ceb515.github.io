@@ -1,0 +1,171 @@
+<!DOCTYPE html>
+<html>
+<title>K3NOP - CHARLES</title>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<link rel="stylesheet" href="css/w3.css">
+<link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Inconsolata">
+<link rel="shortcut icon" type="image/x-icon" href="images/rj45.ico">
+
+<style>
+body, html {
+  height: 100%;
+  font-family: "Inconsolata", sans-serif;
+}
+
+.bgimg {
+  background-position: center;
+  background-size: cover;
+  background-image: url("images/radio.webp");
+  min-height: 75%;
+}
+
+.menu {
+  display: none;
+}
+</style>
+<body>
+
+<!-- Links (sit on top) -->
+<div class="w3-top">
+  <div class="w3-row w3-padding w3-black">
+    <div class="w3-col s3">
+      <a href="#" class="w3-button w3-block w3-black">HOME</a>
+    </div>
+    <div class="w3-col s3">
+      <a href="#about" class="w3-button w3-block w3-black">ABOUT</a>
+    </div>
+    <div class="w3-col s3">
+      <a href="#awards" class="w3-button w3-block w3-black">AWARDS</a>
+    </div>
+    <div class="w3-col s3">
+      <a href="#log" class="w3-button w3-block w3-black">LOGS</a>
+    </div>
+  </div>
+</div>
+
+<!-- Header with image -->
+<header class="bgimg w3-display-container w3-grayscale-min" id="home">
+  <div class="w3-display-bottomleft w3-center w3-padding-large w3-hide-small">
+    <span class="w3-tag w3-large">charles@bricker.cc</span>
+  </div>
+  <div class="w3-display-middle w3-center">
+    <span class="w3-text-white" style="font-size:90px">K3NOP<br>CHARLES</span>
+  </div>
+  <div class="w3-display-bottomright w3-center w3-padding-large">
+    <span class="w3-text-white"></span>
+  </div>
+</header>
+
+<!-- Add a background color and large text to the whole page -->
+<div style="background-color:#F8F6F2" class= w3-large">
+
+<!-- About Container -->
+<div class="w3-container" id="about">
+  <div class="w3-content" style="max-width:700px">
+    <h5 class="w3-center w3-padding-64"><span class="w3-tag w3-wide">ABOUT ME</span></h5>
+    <p>I am a US-based Amatuer Extra class amateur radio operator with interests ranging from
+         public saftey scanning to HF phone operation. If we made a contact and you would like a QSL
+         card, please reach out to me or send me your own card, I respond to all QSL cards.</p>
+    
+<div class="w3-panel w3-leftbar w3-light-grey">
+      <p><i>“The Web as I envisaged it, we have not seen it yet. The future is still so much bigger than the past.”</i></p>
+      <p>Tim Berners-Lee | Inventor of the World Wide Web</p>
+    </div>
+  </div>
+</div>
+
+<!-- Awards Container -->
+<div class="w3-container" id="awards">
+  <div class="w3-content" style="max-width:700px">
+ 
+    <h5 class="w3-center w3-padding-48"><span class="w3-tag w3-wide">AWARDS</span></h5>
+  
+    <div class="w3-row w3-center w3-card w3-padding">
+      <a href="javascript:void(0)" onclick="openMenu(event, 'QRZ');" id="myLink">
+        <div class="w3-col s6 tablink">QRZ</div>
+      </a>
+      <a href="javascript:void(0)" onclick="openMenu(event, 'LOTW');">
+        <div class="w3-col s6 tablink">LOTW</div>
+      </a>
+    </div>
+
+    <div id="QRZ" class="w3-container menu w3-padding-48 w3-card">
+        <h5>UNITED STATES COUNTIES AWARD</h5>
+        <p class="w3-text-grey">
+          Granted: 2021-07-13 13:25:32
+          <ul>
+              <li>100 Counties Digital</li>
+              <li>100 Counties Mixed</li>
+          </ul>
+        </p><br>
+
+        <h5>GRID SQUARED AWARD</h5>
+      <p class="w3-text-grey">
+        Granted: 2021-07-13 13:24:05
+        <ul>
+            <li>Mixed Digital</li>
+        </ul>
+      </p><br>
+
+      <h5>WORLD RADIO FRIENDSHIP AWARD</h5>
+      <p class="w3-text-grey">
+        Granted: 2021-05-19 20:22:34
+        <ul>
+            <li>20M Digital</li>
+            <li>40M Digital</li>
+            <li>Mixed Digital</li>
+            <li>20M Mixed</li>
+            <li>40M Mixed</li>
+            <li>Mixed Phone</li>
+        </ul>
+      </p><br>
+
+    <div id="LOTW" class="w3-container menu w3-padding-48 w3-card">
+      
+      <h5>More To Come</h5>
+      
+    </div> 
+
+  </div>
+</div>
+
+<!-- Logs Container -->
+<div class="w3-container" id="log">
+  <div class="w3-content" style="max-width:700px">
+    <h5 class="w3-center w3-padding-64"><span class="w3-tag w3-wide">LOGS</span></h5>
+    <div class="w3-panel w3-leftbar w3-light-grey">
+    <iframe align="top" frameborder="0" height="500" scrolling="yes" src="https://logbook.qrz.com/lbstat/K3NOP/" width="640"></iframe>  
+    </div>
+  </div>
+</div>
+
+<!-- End page content -->
+</div>
+
+<!-- Footer -->
+<footer class="w3-center w3-light-grey w3-padding-48 w3-large">
+  <p>&copy;2021 - Charles Bricker</p>
+  <p><small>Site Updated: Oct 9, 2021</small></p>
+</footer>
+
+<script>
+// Tabbed Menu
+function openMenu(evt, menuName) {
+  var i, x, tablinks;
+  x = document.getElementsByClassName("menu");
+  for (i = 0; i < x.length; i++) {
+    x[i].style.display = "none";
+  }
+  tablinks = document.getElementsByClassName("tablink");
+  for (i = 0; i < x.length; i++) {
+    tablinks[i].className = tablinks[i].className.replace(" w3-dark-grey", "");
+  }
+  document.getElementById(menuName).style.display = "block";
+  evt.currentTarget.firstElementChild.className += " w3-dark-grey";
+}
+document.getElementById("myLink").click();
+</script>
+
+</body>
+</html>
